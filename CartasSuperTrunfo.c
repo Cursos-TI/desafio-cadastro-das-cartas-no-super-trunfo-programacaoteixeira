@@ -13,6 +13,7 @@ int main(){
     int pontosturisticos1, pontosturisticos2;
     float densipopulacional1, densipopulacional2;
     float PIBpercapita1, PIBpercapita2;
+    float superpoder1, superpoder2;
 
     printf("CARTA 1!!!\n");
     printf("Estado: A\n");
@@ -32,12 +33,17 @@ int main(){
 
     printf("Quantos pontos turisticos tem sua cidade:\n");
     scanf("%d", &pontosturisticos1);
+   
     densipopulacional1 = populacao1 / area1;
 
     printf("densidade populacional: %f\n", densipopulacional1);
     PIBpercapita1 = PIB1 / populacao1;
 
-    printf("PIB per Capita: %f\n\n", PIBpercapita1);
+    printf("PIB per Capita: %f\n", PIBpercapita1);
+
+    superpoder1 = populacao1 + area1 + PIB1 + pontosturisticos1;
+
+    printf("Super Poder: %f\n\n", superpoder1);
 
 printf("CARTA 2!!!\n");
 printf("Estado: B\n");
@@ -65,6 +71,9 @@ PIBpercapita2 = PIB2 / populacao2;
 
 printf("PIB per Capita: %f\n", PIBpercapita2);
 
+superpoder2 = populacao2 + area2 + PIB2 + pontosturisticos1;
+
+printf("Super Poder: %f\n", superpoder2);
 
 
 
